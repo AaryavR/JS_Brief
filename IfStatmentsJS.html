@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>If Statements in JS</title>
+    </head>
+
+    <body>
+        <div>
+            <button onClick="day()">Try it</button>
+            <p id="h"></p>
+            <p id="g"></p>
+        </div>
+        <script>
+            function day() {
+                var time = new Date().getHours();
+                var greeting;
+
+                if (time < 10) {
+                    greeting = "Good Morning";
+                }
+
+                else if (time < 20) {
+                    greeting = "Good Afternoon"
+                }
+
+                else {
+                    greeting = "Good Night"
+                }
+
+                document.getElementById("h").innerHTML = time + " o'clock"
+                document.getElementById("g").innerHTML = greeting 
+            }
+
+
+        </script>
+    </body>
+
+</html>
